@@ -1,0 +1,58 @@
+﻿<Window x:Class="ITCAPlus.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ITCAPlus"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800">
+
+    <Grid>
+        <!-- Panel superior -->
+        <Grid x:Name="panelHeader" VerticalAlignment="Top" Height="50" Background="#FF0F4E7A">
+            <TextBlock Text="ITCA Plus" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Century Gothic" FontSize="20" FontWeight="Bold" Foreground="White"/>
+        </Grid>
+
+        <!-- Panel lateral -->
+        <Grid x:Name="sidePanel" Background="#FF0F4E7A" HorizontalAlignment="Left" Margin="0,50,0,0" Width="213">
+            <StackPanel>
+                <Grid Height="111" Background="#FF0F4E7A">
+                    <Button HorizontalAlignment="Right" Height="20" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent" Cursor="Hand">
+                        <!--Agregar datos de usuario-->
+                    </Button>
+                </Grid>
+                <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" FontFamily="Century Gothic" FontSize="14" Foreground="White" BorderBrush="Transparent" Background="Transparent" FontWeight="Bold" VerticalAlignment="Stretch">
+                    <ListViewItem Height="30">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="15 0 0 0" Text="Inicio" VerticalAlignment="Center" FontFamily="Corbel"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="30">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="15 0 0 0" Text="Registro de calificaciones" VerticalAlignment="Center" FontFamily="Corbel"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="30">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="15 0 0 0" Text="Registro de alumnos" VerticalAlignment="Center" FontFamily="Corbel"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="30">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="15 0 0 0" Text="Asignacion docente" VerticalAlignment="Center" FontFamily="Corbel"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="30">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="15 0 0 0" Text="Reporte" VerticalAlignment="Center" FontFamily="Corbel"/>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+            </StackPanel>
+        </Grid>
+        <Frame  Margin="213,50,0,0"/>
+  
+    </Grid>
+
+
+</Window>
